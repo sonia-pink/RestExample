@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/ev/Desktop/sonia-workspaces/MyWork/RestAssuredProject/RestAssuredProject">
+        <classes>
+            <class name="com.restAssured.BDD_BasicAuth">
+                <methods>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.BDD_DataProvider">
+                <methods>
+                    <include name="multiple_data"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.BDD_Delete">
+                <methods>
+                    <include name="deleteData"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.BDD_Patch">
+                <methods>
+                    <include name="patchData"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.BDD_Put">
+                <methods>
+                    <include name="putData"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.BasicAuth">
+                <methods>
+                    <include name="post_Data_Auth"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.DeleteRequest">
+                <methods>
+                    <include name="deleteData"/>
+                </methods>
+            </class>
+            <class name="com.restAssured.GetRequest">
+                <methods>
+                    <include name="getRequestMethod"/>
+                    <include name="getContentType"/>
+                </methods>
+            </class>
+            
+        </classes>
+    </test>
+</suite>
